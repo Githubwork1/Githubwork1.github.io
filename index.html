@@ -1,223 +1,38 @@
 <!DOCTYPE html>
 <html>
- 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
-<style>
-body, html {height: 100%}
-body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
-.menu {display: none}
-.bgimg {
-  
-   
-  background-image: url("unnamed.png");
-  min-height: 90%;
-}
-</style>
+<head>
+	<title>Example</title>
+	<style>
+		body {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			min-height: 100vh;
+			font-family: arial, sans-serif;
+		}
+		input, textarea {
+			display: block;
+			width: 300px;
+			font-size: 18px;
+			margin: 7px 0px;
+		}
+		label {
+			display: block;
+			padding: 2px 0px;
+		}
+	</style>
+</head>
 <body>
-
-<!-- Navbar (sit on top) -->
-<div class="w3-top w3-hide-small">
-  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
-    <a href="#" class="w3-bar-item w3-button">HOME</a>
-    <a href="#menu" class="w3-bar-item w3-button"> Haya Cartoons</a>
-    <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
-    <a href="#myMap" class="w3-bar-item w3-button">CONTACT</a>
-  </div>
-</div>
-  
-<!-- Header with image -->
-<header class="bgimg w3-display-container w3-grayscale-min" id="home">
-  <div class="w3-display-bottomleft w3-padding">
-    <span class="w3-tag w3-xlarge">We can whatch cartoons at any time</span>
-  </div>
-  <div class="w3-display-middle w3-center">
-     
-    <p><a href="#menu" class="w3-button w3-xxlarge w3-pink">Let me see Haya Cartoons</a></p>
-  </div>
-</header>
-
- <!-- Menu Container -->
-
-
- <!-- Menu Container -->
- <div class="w3-container w3-hover-border-light-blue w3-padding-64 w3-xxlarge" id="menu">
-  <div class="w3-content">
-  
-    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">HAYA CARTOONS</h1>
-    <div class="w3-row w3-center w3-border w3-border-dark-grey">
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-purple">Section One</div>
-      </a>
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-pink">Section Two</div>
-      </a>
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-pink">Section three</div>
-      </a>
-    </div>
-    <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
-      <h1><b>Conan</b> <span class="w3-right w3-tag w3-blue-grey w3-round">1</span></h1>
-      <p class="w3-text-blue"><a href="https://www.youtube.com/watch?v=_Q3SMLxuf-4&feature=youtu.be" target="_thapa">Link</a></p>
-      <hr>
-   
-      <h1><b>Batman</b> <span class="w3-right w3-tag w3-blue-grey w3-round">2</span></h1>
-      <p class="w3-text-blue"><p class="w3-text-blue"><a href="https://www.youtube.com/watch?v=jmRqHEAnPqI" target="_thapa">Link</a></p> 
-      <hr>
-       
-      <h1><b>Green mask</b> <span class="w3-right w3-tag w3-blue-grey w3-round">3</span></h1>
-      <p class="w3-text-blue"> <a href=" https://www.youtube.com/watch?v=D9oF-YbVmn8&feature=youtu.be" target="_thapa">Link</a></p> 
-      <hr>
-      
-
-      <h1><b>Pinky and the brain</b> <span class="w3-right w3-tag w3-dark-grey w3-round">4</span></h1>
-      <p class="w3-text-blue"><a href="https://www.youtube.com/watch?v=xX1uQyIuw30" target="_thapa">Link</a></p>  
-      <hr>
-     
-      <h1><b>Police academy</b> </span><span class="w3-right w3-tag w3-dark-grey w3-round">5</span></h1>
-      <p class="w3-text-blue"><a href="https://www.youtube.com/watch?v=Fy2_ZZa6sJw" target="_thapa">Link</a></p> 
-      <hr>
-
-      <h1><b>Pinokyo</b> <span class="w3-tag w3-grey w3-round">Old story</span><span class="w3-right w3-tag w3-border-blue-gray w3-round">6</span></h1>
-      <p class="w3-text-blue"><a href="https://www.youtube.com/watch?v=UwdjCmXIfHw" target="_thapa">Link</a></p> 
-    </div>
-   
-    <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
-      <h1><b>Rome</b>  <span class="w3-right w3-tag w3-dark-grey w3-round">7</span></h1>
-      <p class="w3-text-blue"><a href="https://www.youtube.com/watch?v=3YQ9dDGAfqs&feature=youtu.be" target="_thapa">Link</a></p> 
-      <hr>
-   
-      <h1><b>Babarthe Elephant</b> <span class="w3-right w3-tag w3-blue-grey w3-round">8</span></h1>
-      <p class="w3-text-blue"><p class="w3-text-blue"><a href="https://www.youtube.com/watch?v=rSpZtUroM8c&feature=youtu.be" target="_thapa">Link</a></p> </p>
-      <hr>
-      
-      <h1><b>Conan</b> <span class="w3-tag w3-pink w3-round">35</span><span class="w3-right w3-tag w3-blue-grey w3-round">9</span></h1>
-      <p class="w3-text-blue"><p class="w3-text-blue"><a href="https://www.youtube.com/watch?v=yBJJd8zmlz4&feature=youtu.be" target="_thapa">Link</a></p> </p>
-      <hr>
-
-      <h1><b>Conan</b> <span class="w3-tag w3-pink w3-round">36</span><span class="w3-right w3-tag w3-blue-grey w3-round">10</span></h1>
-      <p class="w3-text-blue"><p class="w3-text-blue"><a href="https://www.youtube.com/watch?v=rlqlhquxf7k&feature=youtu.be" target="_thapa">Link</a></p> </p>
-      <hr>
-
-      
-    </div>
-
-
-    <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
-      <h1><b>Kabamaru</b> <span class="w3-right w3-tag w3-blue-grey w3-round">11</span></h1>
-      <p class="w3-text-blue"><a href="https://www.youtube.com/watch?v=t_eLJdm0hPY&feature=youtu.be" target="_thapa">Link</a></p></p>
-      <hr>
-   
-      <h1><b>Courage the Cowardly Dog</b> <span class="w3-right w3-tag w3-dark-grey w3-round">12</span></h1>
-      <p class="w3-text-blue"><a href="https://www.youtube.com/watch?v=WlKFfOe4M_g&feature=youtu.be" target="_thapa">Link</a></p></p>
-      <hr>
-      
-      <h1><b>Remi</b> <span class="w3-right w3-tag w3-blue-grey w3-round">13</span></h1>
-      <p class="w3-text-blue"><a href="https://www.youtube.com/watch?v=xTDeFsWcXb4&feature=youtu.be" target="_thapa">Link</a></p></p>
-      <hr>
-      
-      <h1><b>The Secret Garden</b> <span class="w3-right w3-tag w3-dark-grey w3-round">14</span></h1>
-      <p class="w3-text-blue"><a href="https://www.youtube.com/watch?v=aDknBrdy0rg&feature=youtu.be" target="_thapa">Link</a></p></p>
-    </div><br>
-
-  </div>
-</div>
-  <!--<div class="w3-container w3-hover-border-light-blue w3-padding-64 w3-xxlarge" id="menu">
-  <div class="w3-content">
-  
-    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">HAYA CARTOONS</h1>
-    <div class="w3-row w3-center w3-border w3-border-dark-grey">
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink"></a>
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-pink">I</div>
-      </a>
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-pink">Love</div>
-      </a>
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-pink">YOU</div>
-      </a>
-    </div>
-
-    <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
-      <h1><b>Conan</b> <span class="w3-right w3-tag w3-blue-grey w3-round">1</span></h1>
-      <p class="w3-text-blue"><a href="https://www.youtube.com/watch?v=_Q3SMLxuf-4&feature=youtu.be" target="_thapa">Link</a></p>
-      <hr>
-   
-      <h1><b>Batman</b> <span class="w3-right w3-tag w3-blue-grey w3-round">2</span></h1>
-      <p class="w3-text-blue"><p class="w3-text-blue"><a href="https://www.youtube.com/watch?v=jmRqHEAnPqI" target="_thapa">Link</a></p> 
-      <hr>
-       
-      <h1><b>Green mask</b> <span class="w3-right w3-tag w3-blue-grey w3-round">3</span></h1>
-      <p class="w3-text-blue"> <a href=" https://www.youtube.com/watch?v=D9oF-YbVmn8&feature=youtu.be" target="_thapa">Link</a></p> 
-      <hr>
-      
-
-      <h1><b>Pinky and the brain</b> <span class="w3-right w3-tag w3-dark-grey w3-round">4</span></h1>
-      <p class="w3-text-blue"><a href="https://www.youtube.com/watch?v=xX1uQyIuw30" target="_thapa">Link</a></p>  
-      <hr>
-     
-      <h1><b>Police academy</b> <span class="w3-tag w3-pink w3-round">1988</span><span class="w3-right w3-tag w3-dark-grey w3-round">5</span></h1>
-      <p class="w3-text-blue"><a href="https://www.youtube.com/watch?v=Fy2_ZZa6sJw" target="_thapa">Link</a></p> 
-      <hr>
-
-      <h1><b>Pinokyo</b> <span class="w3-tag w3-grey w3-round">Old story</span><span class="w3-right w3-tag w3-border-blue-gray w3-round">6</span></h1>
-      <p class="w3-text-blue"><a href="https://www.youtube.com/watch?v=UwdjCmXIfHw" target="_thapa">Link</a></p> 
-    </div>
-  --
-    -->
- 
-<!-- About Container -->
-<div class="w3-container w3-padding-64 w3-hover-pink w3-grayscale w3-xlarge" id="about">
-  <div class="w3-content">
-    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">About</h1>
-    <p>I just want to have fun with you that is all the therapy I need..</p>
-    <p><strong>In life</strong> try your best to do the right thing.Have fun while you're alive.Take advantage of every asset you have>Don'tntake anything for granted.<img src="7.jpg" style="width:150px" class="w3-circle w3-right" alt="Chef"></p>
-    <p></p>
-    <img src="life.jpg" style="width:100%" class="w3-margin-top w3-margin-bottom" alt="Restaurant">
-    <h1><b>Welcome</b></h1>
+    <form method="post" action="send.php">
+    	<label>Name:</label>
+    	<input type="text" 
+    	       name="name">
     
-    
-  </div>
-</div>
+    	<label>Message:</label>
+    	<textarea name="message"></textarea>
 
-<!-- Image of location/map -->
-
-
-<!-- Contact -->
-<div class="w3-container w3-padding-64 w3-blue w3-grayscale-min w3-xlarge">
-  <div class="w3-content">
-    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contact</h1>
-    <p>If u want to replace any cartoon movie plz contact me on my number.</p>
-    <p><span class="w3-tag">Bye!</span> Haya.</p>
-    <p class="w3-xxlarge"><strong>Duaa</strong>+966 564132559:</p>
-     
-  </div>
-</div>
-
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
-  <p>Have Fun!<a href=" " title="W3.CSS" target="_blank" class="w3-hover-text-green"></a></p>
-</footer>
-
-<script>
-// Tabbed Menu
-function openMenu(evt, menuName) {
-  var i, x, tablinks;
-  x = document.getElementsByClassName("menu");
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < x.length; i++) {
-     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
-  }
-  document.getElementById(menuName).style.display = "block";
-  evt.currentTarget.firstElementChild.className += " w3-red";
-}
-document.getElementById("myLink").click();
-</script>
-
+    	<input type="submit" 
+    	       name="btn">
+    </form>
 </body>
 </html>
