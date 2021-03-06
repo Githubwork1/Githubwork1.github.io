@@ -1,38 +1,54 @@
+ 
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Example</title>
-	<style>
-		body {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			min-height: 100vh;
-			font-family: arial, sans-serif;
-		}
-		input, textarea {
-			display: block;
-			width: 300px;
-			font-size: 18px;
-			margin: 7px 0px;
-		}
-		label {
-			display: block;
-			padding: 2px 0px;
-		}
-	</style>
-</head>
-<body>
-    <form method="post" action="send.php">
-    	<label>Name:</label>
-    	<input type="text" 
-    	       name="name">
-    
-    	<label>Message:</label>
-    	<textarea name="message"></textarea>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
 
-    	<input type="submit" 
-    	       name="btn">
-    </form>
-</body>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none} 
+</style>
+  <body>
+
+    
+<!-- Contact -->
+
+ <!-- Contact -->
+<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">New cartoon</h1>
+    <p>Put the name of the cartoon you want ans it's link</p>
+    <p><span class="w3-tag">less 24h!</span>i will add it.</p>
+    <p class="w3-xxlarge"><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
+    <form class="contact-form">
+        <label for="">Cartton Name </label><br />
+        <input class="name" type="text" placeholder="name"  maxlength="200" size="156"  padding="30px" /><br />
+        <label for="">Link</label><br />
+        <input class="message" type="text" placeholder="Link"  maxlength="200" size="156"  padding="30px"    /><br />
+         
+        <br />
+
+
+        
+        <button class = "w3-button w3-light-grey w3-block"      type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+   
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+  <p><a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green"></a></p>
+</footer>
+
+     
+    
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase.js"></script>
+    <script src="app.js"></script>
+   
+  </body>
 </html>
